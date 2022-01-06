@@ -26,7 +26,9 @@ public class BulletSpawner : MonoBehaviour
         {
             elapsedTime = 0.0f;
             GameObject b = Instantiate(bullet, transform.position, transform.rotation);
+
             b.transform.LookAt(target.transform.position);
+
             spawnDelay = Random.Range(minSpawnDelay, maxSpawnDelay);
         }
     }
