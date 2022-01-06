@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
         float velX = Input.GetAxis("Horizontal");
         float velZ = Input.GetAxis("Vertical");
 
-        rigi.velocity = new Vector3(velX * speed, 0, velZ * speed);\
+        rigi.velocity = new Vector3(velX * speed, 0, velZ * speed);
     }
 
     public void Die()
