@@ -25,5 +25,6 @@ public class PlayerController : MonoBehaviour
     public void Die()
     {
         gameObject.SetActive(false);
+        GameObject.Find("GameManager").GetComponent<GameManager>().GameOver();
     }
 }
